@@ -65,3 +65,7 @@ typings/
 
 # vs code
 .vscode
+
+# build
+build/*.bundle.*
+build/public/js/*

@@ -1,0 +1,47 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "emotion", "prettier"],
+    "env": {
+        "browser": true,
+        "mocha": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "one-var": ["error", "never"],
+        "semi": ["error", "always"],
+        "spaced-comment": "off",
+        "space-infix-ops": "error",
+        "no-undef": "error",
+        "no-trailing-spaces": [
+            "error",
+            {
+                "skipBlankLines": true,
+                "ignoreComments": true
+            }
+        ],
+        "no-console": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "none",
+                "varsIgnorePattern": "logger|assert",
+                "ignoreRestSiblings": true
+            }
+        ],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-function": "off",
+    },
+    "settings": {}
+}
